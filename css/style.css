@@ -1,0 +1,67 @@
+/*Animore title font*/
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*nav font*/
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*내용 font*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root{
+    --nav-color : #E1E8FB;
+
+    --box-color1: #F5F5F5;
+    --box-color2: #D5D5D5;
+
+    --white: #FFFFFF;
+
+    /* font color */
+    --text1: #000000;
+    --text2: #838383;
+    --text3: #6C6C6C;
+    --text4: #726868;
+    --text5: #535252;
+    --text6: #848282;
+    --text7: #6F6F6F;
+    --text8: #888888;
+
+    /* button color */
+    --btn-color1: #E9E9E9;
+    --btn-color2: #B4CBE5;
+    --btn-color3: #88B0DE;
+    --btn-color4: #F1F1F1;
+
+    --border-color1: #C0C0C0;
+   
+    --line-color1: #4B4747;
+    --line-color2:#858585;
+
+    --nav-width: 55px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    text-decoration: none; 
+}
+
+html,body{
+    width: 100%;
+}
