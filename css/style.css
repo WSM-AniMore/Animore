@@ -1,28 +1,19 @@
 @font-face {
-    font-family: 'yg-jalnan';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
-/* bootstrap icon 연결 */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
-
+ 
+ 
 :root{
     
     /* nav background color */
@@ -34,11 +25,6 @@
 
 
     --white: #FFFFFF;
-
-    /* font */
-    --title-font:'yg-jalnan';
-    --nav-font: 'S-CoreDream-3Light';
-    --contents-font: 'Pretendard-Regular';
 
     /* font color */
     --text1: #000000;
@@ -74,10 +60,10 @@
     --line-color2:#858585;
 
     /* nav width */
-    --nav-width: 55px;
+    --nav-height: 44px;
 
      /* font size*/
-     --title-size: 1.5625rem; 
+     --title-size: 1.5rem; 
      --nav-size: 1rem;
      --searchBar-size: 0.9375rem;
      --option-size: 0.5625rem;
@@ -92,7 +78,8 @@
 
      /* hamburger bar */
      --hamburger-open: rgba(100, 99, 99, 0.40);
-
+    
+     /*  */
    
       
 
@@ -103,6 +90,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 img {
@@ -115,9 +103,21 @@ ul, ol {
 
 a{
     text-decoration: none;
+    color: var(--text1);
 }
 
 html,body{
     width: 100%;
 }
+
+body>header{
+    /*<header> 요소를 페이지의 최상단에 고정*/
+    position: absolute;  
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+ 
+
 
