@@ -1,4 +1,3 @@
-/*Animore title font*/
 @font-face {
     font-family: 'yg-jalnan';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
@@ -6,7 +5,6 @@
     font-style: normal;
 }
 
-/*nav font*/
 @font-face {
     font-family: 'S-CoreDream-3Light';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
@@ -14,7 +12,6 @@
     font-style: normal;
 }
 
-/*내용 font*/
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -22,13 +19,26 @@
     font-style: normal;
 }
 
+/* bootstrap icon 연결 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
 :root{
+    
+    /* nav background color */
     --nav-color : #E1E8FB;
 
+    /* box bg color */
     --box-color1: #F5F5F5;
     --box-color2: #D5D5D5;
 
+
     --white: #FFFFFF;
+
+    /* font */
+    --title-font:'yg-jalnan';
+    --nav-font: 'S-CoreDream-3Light';
+    --contents-font: 'Pretendard-Regular';
 
     /* font color */
     --text1: #000000;
@@ -46,22 +56,68 @@
     --btn-color3: #88B0DE;
     --btn-color4: #F1F1F1;
 
+    /* border color */
     --border-color1: #C0C0C0;
+
+    /* border-radius */
+    --box-border1: 1.5px;
+    --box-border2: 5px;
+    --box-border3: 4px;
+    --movie-border: 10px;
+    --option-border: 8px;
+    --btn-border1: 20.15px;
+    --btn-border2: 8px;
+    --btn-border3: 6px;
    
+    /* line color */
     --line-color1: #4B4747;
     --line-color2:#858585;
 
-    --nav-width: 55px
+    /* nav width */
+    --nav-width: 55px;
+
+     /* font size*/
+     --title-size: 1.5625rem; 
+     --nav-size: 1rem;
+     --searchBar-size: 0.9375rem;
+     --option-size: 0.5625rem;
+     --movie-title: 0.8125rem;
+     --movie-date: 0.5rem;
+     --btn-num: 0.625rem;
+
+     /* box-shadow */
+     --box-shadow1: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+     --box-shadow2: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+     --box-shadow3: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+     /* hamburger bar */
+     --hamburger-open: rgba(100, 99, 99, 0.40);
+
+   
+      
+
 }
 
+
+/* 초기설정(reset) */
 *{
     margin: 0;
     padding: 0;
-    
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, ol {
     list-style: none;
-    text-decoration: none; 
+}
+
+a{
+    text-decoration: none;
 }
 
 html,body{
     width: 100%;
 }
+
