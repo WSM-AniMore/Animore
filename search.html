@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>검색 페이지</title>
+    <title>AniMore</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
 </head>
 <body>
     
     <header>
+        <!-- nav -->
         <nav id="nav-container">
             <div class="nav-logo">
                 <a href="#">AniMore</a>
             </div>
 
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Search<i class="bi bi-search" id="logo"></i></a></li>
+                <li class="nav-item"><a href="#">Search<i class="bi bi-search" id="logo"></i></a></li>  
                 <li class="nav-item"><a href="#">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
                 <li class="nav-item"><a href="#">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
                 <li class="nav-item"><a href="#"><i class="bi bi-person-circle" id="my"></i></a></li>
@@ -26,6 +29,132 @@
 
             <div id="nav-toggle"><i class="bi bi-list"></i></div>
         </nav>
+
+ 
+  
+        <!-- 검색바 -->
+        <div id="searchBar-container"> 
+            <form action="#" id="search-form" method="get" onsubmit="submitForm(event)">
+                <input type="text" id="search-input" name="search-bar" placeholder="원하시는 영화를 검색해주세요">
+                <button id="search-button" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+        <!-- 날짜별 주제별 옵션 -->
+         <div id="movieOption-wrapper"> 
+            <div class="select-container">
+        <select name="day" id="choose">
+            <option value="날짜별">날짜별</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select>
+    </div>
+
+            <div class="select-container"> 
+        <select name="topic" id="choose">
+            <option value="주제별">주제별</option>
+            <option value="romance">로맨스</option>
+            <option value="sport">스포츠</option>
+            <option value="action">액션</option>
+            <option value="thriller">스릴러</option>
+            <option value="fantasy">판타지</option>
+        </select>
+    </div>
+        </div>
     </header>
+     
+    <main>
+        <!--  -->
+        <div id="all-container"> 
+
+        <div class="first-line"> 
+        <div class="box-container1">
+           <a href="https://namu.wiki/w/%EA%B7%80%EB%A9%B8%EC%9D%98%20%EC%B9%BC%EB%82%A0" target="_blank">
+            <img src="images/search/귀멸의 칼날.png" alt="">    
+            <p class="title">귀멸의 칼날</p>
+            <p class="date">2019.04.20</p></a> 
+        </div> 
+
+        <div class="box-container1">
+            <a href="https://namu.wiki/w/%EB%AA%A9%EC%86%8C%EB%A6%AC%EC%9D%98%20%ED%98%95%ED%83%9C(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)" target="_blank">
+                <img class="movie-img" src="images/search/목소리의 형태.png" alt=""> 
+            <p class="title">목소리의 형태</p>
+            <p class="date">2017.05.09</p></a>
+        </div> 
+
+        <div class="box-container1">
+            <a href="https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%ED%95%98%EC%9D%B4%ED%81%90!!%20%EC%93%B0%EB%A0%88%EA%B8%B0%EC%9E%A5%EC%9D%98%20%EA%B2%B0%EC%A0%84"target="_blank">
+                <img src="images/search/하이큐.png" alt=""> 
+            <p class="title">하이큐!! 쓰레기장의 결전</p>
+            <p class="date">2024.05.15</p></a>
+        </div> 
+
+        <div class="box-container1">
+            <a href="https://namu.wiki/w/%EB%84%88%EC%9D%98%20%EC%9D%B4%EB%A6%84%EC%9D%80.?from=%EB%84%88%EC%9D%98%20%EC%9D%B4%EB%A6%84%EC%9D%80"target="_blank">
+                <img src="images/search/너의 이름은.png" alt=""> 
+            <p class="title">너의 이름은</p>
+            <p class="date">2016.08.26</p></a>
+        </div> 
+    </div>
+       
+    <div class="second-line"> 
+    <div class="box-container2">
+        <a href="https://namu.wiki/w/%EC%8A%A4%EC%A6%88%EB%A9%94%EC%9D%98%20%EB%AC%B8%EB%8B%A8%EC%86%8D"target="_blank">
+            <img src="images/search/스즈메의 문단속.png" alt=""> 
+        <p class="title">스즈메의 문단속</p>
+        <p class="date">2023.03.08</p></a>
+    </div> 
+
+    <div class="box-container2">
+        <a href="https://namu.wiki/w/%EC%8B%9C%EA%B0%84%EC%9D%84%20%EB%8B%AC%EB%A6%AC%EB%8A%94%20%EC%86%8C%EB%85%80(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)"target="_blank">
+            <img src="images/search/시간을 달리는 소녀.png" alt=""> 
+        <p class="title">시간을 달리는 소녀</p>
+        <p class="date">2007.06.14</p></a>
+    </div> 
+
+    <div class="box-container2">
+        <a href="https://namu.wiki/w/%EC%9A%B0%EB%A6%AC%EC%9D%98%20%EA%B3%84%EC%A0%88%EC%9D%80"target="_blank">
+            <img src="images/search/우리의 계절은.png" alt=""> 
+        <p class="title">우리의 계절은</p>
+        <p class="date">2018.08.05</p></a>
+    </div> 
+
+    <div class="box-container2">
+        <a href="https://namu.wiki/w/%EC%A3%BC%EC%88%A0%ED%9A%8C%EC%A0%84(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%201%EA%B8%B0)?from=%EC%A3%BC%EC%88%A0%ED%9A%8C%EC%A0%84%28%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%29"target="_blank">
+            <img src="images/search/주술회전.png" alt="">
+        <p class="title">주술회전</p>
+        <p class="date">2022.02.17</p></a>
+    </div> 
+        </div>
+            </div>
+
+        <div id="btn-container">
+            <button id="before"><i class="bi bi-chevron-left"></i></button>
+            <button id="btn1">1</button>
+            <button id="btn2">2</button>
+            <button id="btn3">3</button>
+            <button id="next"><i class="bi bi-chevron-right"></i></button>
+
+        </div>
+    </main>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // 폼 제출 기본 동작 막기
+
+            // 검색어 가져오기
+            var searchInput = document.getElementById("search-input").value;
+
+            // 검색어 알림으로 보여주기
+            
+            alert("찾으신 영화인 " + searchInput+ "은 저희 웹사이트에서 정보를 제공합니다.");
+        }
+    </script>
 </body>
 </html>

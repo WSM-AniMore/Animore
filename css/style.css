@@ -35,6 +35,7 @@
     --text6: #848282;
     --text7: #6F6F6F;
     --text8: #888888;
+    --text9: #868686;
 
     /* button color */
     --btn-color1: #E9E9E9;
@@ -52,7 +53,7 @@
     --movie-border: 10px;
     --option-border: 8px;
     --btn-border1: 20.15px;
-    --btn-border2: 8px;
+    --btn-border2: 15px;
     --btn-border3: 6px;
    
     /* line color */
@@ -66,9 +67,9 @@
      --title-size: 1.5rem; 
      --nav-size: 1rem;
      --searchBar-size: 0.9375rem;
-     --option-size: 0.5625rem;
+     --option-size: 0.7rem;
      --movie-title: 0.8125rem;
-     --movie-date: 0.5rem;
+     --movie-date: 0.7rem;
      --btn-num: 0.625rem;
 
      /* box-shadow */
