@@ -35,7 +35,19 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
- 
+.nav-item:hover{
+    transform: scale(1.1);
+ }
+
+.nav-logo a:hover{
+    color: rgb(67, 67, 67);
+}
+.nav-item:nth-child(2) a:hover{
+    font-weight: 600;
+}
+.nav-item:nth-child(3) a:hover{
+    font-weight: 600;
+}
 #nav-toggle, #logo, #mypage{
     display: none;
 }
