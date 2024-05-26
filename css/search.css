@@ -34,7 +34,7 @@ body{
 #movieOption-wrapper{
    display: flex;
    column-gap: 20px;
-   margin: 25px 0 0 320px;
+   margin: 24px auto auto 105px;
 }
 
 select{ 
