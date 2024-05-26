@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"> <!-- 제목 왼쪽 옆 아이콘 지정 -->
+    <title>AniMore</title>
+</head>
+<body>
+    <header>
+        <!-- nav -->
+        <nav id="nav-container">
+            <div class="nav-logo">
+                <a href="#">AniMore</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Search<i class="bi bi-search" id="logo"></i></a></li>  
+                <li class="nav-item"><a href="#">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
+                <li class="nav-item"><a href="#">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="bi bi-person-circle" id="my"></i></a></li>
+                <li class="nav-item"><a href="#" id="mypage">마이페이지<i class="bi bi-person-circle" id="logo"></i></a></li>
+            </ul>
+
+            <div id="nav-toggle"><i class="bi bi-list"></i></div>
+        </nav>
+
+        <div id="SearchBar"> 
+            <form action="#" id="SearchForm" method="get" onsubmit="submitForm(event)">
+            <input type="text" id="SearchText" name="SearchBar" placeholder="원하시는 굿즈를 검색해주세요">
+                <button id="SearchButton" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <div id="Tags">
+            <span class="SaveButton"><i class="bi bi-bookmark-fill"></i></span>
+            <span class="Tag1"><p># 아크릴 스탠드</p></span>
+            <span class="Tag2"><p># 누이</p></span>
+            <span class="Tag3"><p># 바지 케이스케</p></span>
+        </div>
+
+        <div class="AllContainer">
+
+            <div class="GoodsContainer1">
+                <div class="Good1 Good">
+                    <img src="/Animore/images/goods/치기리 효마 캔뱃지.png" alt="">
+                    <p class="Title">[블루록]</p>
+                    <p class="GoodsName">치기리 효마 캔뱃지</p>
+                    <p class="Won">5,000원</p>
+                </div>
+                <div class="Good2 Good">
+                    <img src="/Animore/images/goods/넨도 로이드 굿즈 오이카와.png" alt="">
+                    <p class="Title">[하이큐]</p>
+                    <p class="GoodsName">넨도 로이드 굿즈 오이카와</p>
+                    <p class="Won">17,580원</p>
+                </div>
+                <div class="Good3 Good">
+                    <img src="/Animore/images/goods/fine 피네 TRIP 트립 앨범 시리즈.png" alt="">
+                    <p class="Title">[앙상블 스타즈]</p>
+                    <p class="GoodsName">fine 피네 TRIP 트립 앨범 시리즈</p>
+                    <p class="Won">40,000원</p>
+                </div>
+                <div class="Good4 Good">
+                    <img src="/Animore/images/goods/카마도 탄지로 피규어.png" alt="">
+                    <p class="Title">[귀멸의 칼날]</p>
+                    <p class="GoodsName">카마도 탄지로 피규어</p>
+                    <p class="Won">200,500원</p>
+                </div>
+            </div>
+            
+            <div class="GoodsContainer2">
+                <div class="Good5 Good">
+                    <img src="/Animore/images/goods/후와코로링.png" alt="">
+                    <p class="Title">[수성의 마녀]</p>
+                    <p class="GoodsName">후와코로링 / 슬레타</p>
+                    <p class="Won">12,000원</p>
+                </div>
+                <div class="Good6 Good">         
+                    <img src="/Animore/images/goods/아리마 카나 캔버스 보드.png" alt="">
+                    <p class="Title">[최애의 아이]</p>
+                    <p class="GoodsName">아리마 카나 캔버스 보드</p>
+                    <p class="Won">25,000원</p>
+                </div>
+                <div class="Good7 Good">
+                    <img src="/Animore/images/goods/사노 만지로 수트 스타일 아크릴 스탠드.png" alt="">
+                    <p class="Title">[도쿄 리벤져스]</p>
+                    <p class="GoodsName">사노 만지로 수트 아크릴 스탠드</p>
+                    <p class="Won">18,000원</p>
+                </div>
+                <div class="Good8 Good">
+                    <img src="/Animore/images/goods/고죠, 게토 룩업.png" alt="">
+                    <p class="Title">[주술회전]</p>
+                    <p class="GoodsName">고죠, 게토 룩업</p>
+                    <p class="Won">93,000원</p>
+                </div>
+            </div>
+
+            <div id="ButtonContainer">
+                <div id="btn0"><i class="bi bi-chevron-left"></i></div>
+                <div id="btn1">1</div>
+                <div id="btn2">2</div>
+                <div id="btn3">3</div>
+                <div id="btn4"><i class="bi bi-chevron-right"></i></div>
+            </div>
+
+        </div>
+
+</body>
+</html>
