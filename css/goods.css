@@ -59,7 +59,7 @@ body {
     column-gap: 10px;
     margin-top: 15px;
     font-size: 10px;
-    margin-left: 490px;
+    margin-left: 442px;
     align-items: center; /* 세로 중앙 정렬 */
     cursor: pointer;
 }
@@ -139,7 +139,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 50px;
 }
  
 #btn1, #btn2, #btn3{
