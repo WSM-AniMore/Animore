@@ -1,0 +1,184 @@
+body {
+    font-family:'Pretendard-Regular';
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.nav-logo a:hover {
+    color: rgb(67, 67, 67);
+}
+
+.nav-item:nth-child(1) a:hover{
+    font-weight: 600;
+}
+.nav-item:nth-child(3) a:hover{
+    font-weight: 600;
+}
+
+.nav-item:nth-child(2) a {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+  
+#nav-container {
+    position: fixed; /*nav바 고정*/
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+ 
+#SearchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}      
+ 
+#SearchText {
+    margin-top: 100px;
+    width: 395.001px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid var(--line-color1);
+    font-family: 'Pretendard-Regular';
+    outline: none; /*클릭시 테두리 제거*/
+}
+
+#Tags {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+    margin-left: 490px;
+    align-items: center; /* 세로 중앙 정렬 */
+    cursor: pointer;
+}
+
+.Tag1, .Tag2, .Tag3 {
+    background-color: #F3F3F3;
+    width: 80px;
+    height: 22px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--text4);
+    display: flex; /* 플렉스 박스로 설정 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+.Tag2 {
+    width: 40px;
+    height: 22px;
+}
+
+.Tag3 {
+    width: 80px;
+    height: 22px;
+}
+
+.GoodsContainer1 img, .GoodsContainer2 img {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GoodsContainer1, .GoodsContainer2 {
+    display: flex;
+    column-gap: 95px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Good:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Title {
+    font-size: 10px;
+    color: var(--text10);
+    line-height: 12px;
+}
+
+.GoodsName {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.Won {
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Good {
+    box-shadow: var(--box-shadow1);
+    border-radius: 4px;
+    display: flex;
+    padding: 13px 11px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+#ButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+ 
+#btn1, #btn2, #btn3{
+    width: 33px;
+    height: 33px;
+    border-radius: var(--btn-border1);
+    font-family: 'Pretendard-Regular';
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex; /* 플렉스 박스로 설정 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+#btn1 {
+    background-color: var(--btn-color3);
+    color: var(--white);
+
+}
+
+#btn2, #btn3 {
+    background-color: var(--btn-color2);
+    color: var(--text2);
+}
+
+#btn3 {
+    margin-right: 10px;
+}
+ 
+#btn1:hover, #btn2:hover, #btn3:hover {
+    transform: scale(1.13);
+}
+ 
+#btn0, #btn4 {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: var(--btn-border1);
+    background-color: var(--btn-color1);
+    border: none;
+    font-size: 12px;
+    display: flex; /* 플렉스 박스로 설정 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+ 
+#btn0:hover, #btn4:hover {
+    transform: scale(1.3);
+}
