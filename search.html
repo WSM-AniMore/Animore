@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+  
 </head>
 <body>
     
@@ -20,14 +21,16 @@
             </div>
 
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Search<i class="bi bi-search" id="logo"></i></a></li>  
+                <li class="nav-item"><a href="search.html">Search<i class="bi bi-search" id="logo"></i></a></li>  
                 <li class="nav-item"><a href="goods.html">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
                 <li class="nav-item"><a href="#">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
                 <li class="nav-item"><a href="#"><div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i></a></li>
      
             </ul>
-
-            <div id="nav-toggle"><i class="bi bi-list"></i></div>
+            <!-- 햄버거 바 -->
+            <div id="nav-toggle">
+                <i class="bi bi-list"></i>
+            </div>
         </nav>
 
  
@@ -161,5 +164,8 @@
             alert("찾으신 영화인 " + searchInput+ "은 저희 웹사이트에서 정보를 제공합니다.");
         }
     </script>
+
+    <script src="js/nav.js"></script>
 </body>
+
 </html>
