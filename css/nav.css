@@ -72,7 +72,6 @@
     }
 
     .nav-menu{
-         
         flex-direction: column;
         background-color: #F0F4FF;;
         width: 197px;
@@ -81,13 +80,16 @@
         right: 0;
         top: 100%;
         z-index: -1;
+
+        display: none; /*처음에 안보여지게 함*/
     }
 
     .nav-item{ 
         padding: 0.25rem 0;
-        margin: 19px 20px 0 0;
+        margin: 19px 20px auto 20px;
         border-bottom: 1.4px solid var(--line-color1);
         width: 120px; /*밑줄 길이 120px만큼 늘리기 */
+        
     }
     .nav-item a{
         font-family: "Inter", sans-serif;
@@ -96,8 +98,11 @@
         font-size: inherit; /* 부모 요소의 폰트 크기를 상속 */
         font-weight: inherit;  
         color: inherit; 
-         
+        
     }
+    .nav-item:hover{
+        transform: none;
+     }
 
     .nav-item a .bi {
         margin-left: 10px;
@@ -116,6 +121,15 @@
         cursor: pointer;
     }
 
+    #logo, #mypage-logo{
+        display: block;
+    }
+
+    .text{
+        display: block;
+        font-size: 0.87rem;
+    }
+
     .bi-list{ /*hamburger bar*/
         font-size: 1.6rem;
         align-items: center;
@@ -124,15 +138,11 @@
         top: 15%;
     }
     
-    #logo, #mypage-logo{
-        display: block;
-    }
-.text{
+    /* 토글 기능 클래스 */
+   .toggleActive{
     display: block;
-    font-size: 0.87rem;
-}
- 
-     
+   }
+    
 }
 
 

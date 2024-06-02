@@ -17,7 +17,6 @@ body{
    align-items: center;
 }
      
-
 #search-input{
    margin-top: 100px;
    width: 395.001px;
@@ -49,6 +48,7 @@ select{
 option{
    background-color: rgb(228, 228, 228); 
 }
+
 #choose{
    width: 80px;
    height: 20px;

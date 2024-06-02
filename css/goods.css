@@ -192,5 +192,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    
+    .nav-item:hover { /*transform 효과 없애기*/
+        transform: none;
+    }
 }
