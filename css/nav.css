@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Inter:wght@100..900&display=swap');
 
-
+ 
 
 #nav-container{
     height: var(--nav-height);
@@ -13,13 +13,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 0 20px;
+
+    position: fixed; /*nav바 고정*/
+    top: 0;
+    left: 0;
+    right: 0;
+	 z-index: 100;
 }
 
 .nav-logo a{
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 900;
     font-size: var(--title-size);
-     
 }
 .bi-person-circle{
     font-size: 1.5rem;
@@ -31,11 +36,18 @@
 }
 
 .nav-menu a{
+    display: flex; /*가로로 배치*/
     font-size: var(--nav-size);
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
-
+ 
+#mypage-logo{
+    margin-right: 20px;
+}
+.text{
+    display: none;
+}
  .nav-item:hover{
     transform: scale(1.1);
  }
@@ -44,17 +56,10 @@
     color: rgb(67, 67, 67);
 }
 
-/*
-.nav-item:nth-child(2) a:hover{
-    font-weight: 600;
-}
-.nav-item:nth-child(3) a:hover{
-    font-weight: 600;
-} */
-
-#nav-toggle, #logo, #mypage{
+#nav-toggle, #logo{
     display: none;
 }
+ 
 
 /* mobile */
 @media screen and (max-width: 600px){
@@ -67,6 +72,7 @@
     }
 
     .nav-menu{
+         
         flex-direction: column;
         background-color: #F0F4FF;;
         width: 197px;
@@ -77,7 +83,7 @@
         z-index: -1;
     }
 
-    .nav-item{
+    .nav-item{ 
         padding: 0.25rem 0;
         margin: 19px 20px 0 0;
         border-bottom: 1.4px solid var(--line-color1);
@@ -86,7 +92,25 @@
     .nav-item a{
         font-family: "Inter", sans-serif;
         color: var(--text3);
+        flex-direction: row;
+        font-size: inherit; /* 부모 요소의 폰트 크기를 상속 */
+        font-weight: inherit;  
+        color: inherit; 
+         
     }
+
+    .nav-item a .bi {
+        margin-left: 10px;
+    }
+
+    #mypage-logo{
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        margin-left: 10px; /* 텍스트와 아이콘 사이의 간격 */
+    }
+
     #nav-toggle{
         display: block;
         cursor: pointer;
@@ -100,17 +124,20 @@
         top: 15%;
     }
     
-    #logo, #mypage{
+    #logo, #mypage-logo{
         display: block;
-         
     }
-
-    #my{ /*mypage로고*/
-        display: none;
-    }
-    
-
+.text{
+    display: block;
+    font-size: 0.87rem;
 }
+ 
+     
+}
+
+
+ 
+
 
 
  
