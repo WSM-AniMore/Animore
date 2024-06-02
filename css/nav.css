@@ -80,8 +80,8 @@
         right: 0;
         top: 100%;
         z-index: -1;
-
-        display: none; /*처음에 안보여지게 함*/
+         
+        display: none; /* 처음에 안보여지게 함 */
     }
 
     .nav-item{ 
@@ -102,7 +102,7 @@
     }
     .nav-item:hover{
         transform: none;
-     }
+    }
 
     .nav-item a .bi {
         margin-left: 10px;
@@ -137,10 +137,13 @@
         right: 2%;
         top: 15%;
     }
-    
+    .bi-x-lg{
+        font-size: 1.3rem;
+    }
+
     /* 토글 기능 클래스 */
    .toggleActive{
-    display: block;
+    display: block; 
    }
     
 }
