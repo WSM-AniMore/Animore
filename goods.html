@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="css/goods.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"> <!-- 제목 왼쪽 옆 아이콘 지정 -->
-     
+
     <title>AniMore</title>
 </head>
+
 <body>
     <header>
         <!-- nav -->
@@ -21,19 +23,21 @@
             </div>
 
             <ul class="nav-menu">
-                <li class="nav-item"><a href="search.html">Search<i class="bi bi-search" id="logo"></i></a></li>  
+                <li class="nav-item"><a href="search.html">Search<i class="bi bi-search" id="logo"></i></a></li>
                 <li class="nav-item"><a href="goods.html">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
                 <li class="nav-item"><a href="#">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
-                <li class="nav-item"><a href="#"><div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i></a></li>
-                
+                <li class="nav-item"><a href="#">
+                        <div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i>
+                    </a></li>
+
             </ul>
 
             <div id="nav-toggle"><i class="bi bi-list"></i></div>
         </nav>
 
-        <div id="SearchBar"> 
+        <div id="SearchBar">
             <form action="#" id="SearchForm" method="get" onsubmit="submitForm(event)">
-            <input type="text" id="SearchText" name="SearchBar" placeholder="원하시는 굿즈를 검색해주세요">
+                <input type="text" id="SearchText" name="SearchBar" placeholder="원하시는 굿즈를 검색해주세요">
                 <button id="SearchButton" type="submit">
                     <i class="bi bi-search"></i>
                 </button>
@@ -42,9 +46,15 @@
 
         <div id="Tags">
             <span class="SaveButton"><i class="bi bi-bookmark-fill"></i></span>
-            <span class="Tag1"><p># 아크릴 스탠드</p></span>
-            <span class="Tag2"><p># 누이</p></span>
-            <span class="Tag3"><p># 바지 케이스케</p></span>
+            <span class="Tag1">
+                <p># 아크릴 스탠드</p>
+            </span>
+            <span class="Tag2">
+                <p># 누이</p>
+            </span>
+            <span class="Tag3">
+                <p># 바지 케이스케</p>
+            </span>
         </div>
 
         <div class="AllContainer">
@@ -75,7 +85,7 @@
                     <p class="Won">200,500원</p>
                 </div>
             </div>
-            
+
             <div class="GoodsContainer2">
                 <div class="Good5 Good">
                     <img src="images/goods/후와코로링.png" alt="">
@@ -83,7 +93,7 @@
                     <p class="GoodsName">후와코로링 / 슬레타</p>
                     <p class="Won">12,000원</p>
                 </div>
-                <div class="Good6 Good">         
+                <div class="Good6 Good">
                     <img src="images/goods/아리마 카나 캔버스 보드.png" alt="">
                     <p class="Title">[최애의 아이]</p>
                     <p class="GoodsName">아리마 카나 캔버스 보드</p>
@@ -114,4 +124,5 @@
         </div>
         <script src="js/nav.js"></script>
 </body>
+
 </html>
