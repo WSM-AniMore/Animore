@@ -202,6 +202,32 @@ body {
     .Good4, .Good8 {
         display: none;
     }
+
+    .GoodsContainer1, .GoodsContainer2 {
+        display: flex;
+        column-gap: 65px;
+        margin-top: 30px;
+    }
+
+    #ActiveButton {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -400px 20px;
+        background-color: #ffff;
+    }
+
+    #Actbtn1, #Actbtn2 {
+        box-shadow: var(--box-shadow1);
+        border-radius: 28px;
+        width: 56px;
+        height: 56px;
+        cursor: pointer;
+        display: flex; /* 플렉스 박스로 설정 */
+        align-items: center; /* 세로 중앙 정렬 */
+        justify-content: center; /* 가로 중앙 정렬 */
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
