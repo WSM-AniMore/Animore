@@ -59,7 +59,7 @@ body {
     column-gap: 10px;
     margin-top: 15px;
     font-size: 10px;
-    margin-left: 442px;
+    margin-left: 493px;
     align-items: center; /* 세로 중앙 정렬 */
     cursor: pointer;
 }
@@ -189,6 +189,10 @@ body {
  
 #btn0:hover, #btn4:hover {
     transform: scale(1.3);
+}
+
+@media screen and (max-width: 1024px) {
+    
 }
 
 @media screen and (max-width: 600px) {
