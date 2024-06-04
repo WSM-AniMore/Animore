@@ -10,16 +10,8 @@ body {
     color: rgb(67, 67, 67);
 }
 
-.nav-item:nth-child(1) a:hover{
+.nav-item a:hover{
     font-weight: 600;
-}
-.nav-item:nth-child(3) a:hover{
-    font-weight: 600;
-}
-
-.nav-item:nth-child(2) a {
-    font-weight: 500;
-    font-size: 1.1rem;
 }
   
 #nav-container {
@@ -203,8 +195,14 @@ body {
     display: none;
 }
 
+/* tablet */
 @media screen and (max-width: 1024px) {
 
+    .AllContainer{
+        margin-top: 30px;
+        height: 600px;
+    }
+ 
     .Good4, .Good8 {
         display: none;
     }
@@ -212,14 +210,22 @@ body {
     .GoodsContainer1, .GoodsContainer2 {
         display: flex;
         column-gap: 65px;
-        margin-top: 30px;
+        margin-top: 30px;    
+    }
+
+    .Good:hover {
+        transform: scale(1.05);
+    }
+
+    #ButtonContainer {
+        display: none;
     }
 
     #ActiveButton {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: -430px 20px;
+        margin: -370px 20px;
         background-color: #ffff;
          
     }
@@ -235,7 +241,6 @@ body {
         align-items: center; /* 세로 중앙 정렬 */
         justify-content: center; /* 가로 중앙 정렬 */
         text-align: center;
-         
     }
 }
 
@@ -247,7 +252,7 @@ body {
 
 @media screen and (max-width: 600px) {
     #SearchText {
-        margin-top  : 80px;
+        margin-top: 80px;
         width: 302.041px;
     }
     
