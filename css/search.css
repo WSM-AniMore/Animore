@@ -33,7 +33,6 @@ body{
    margin: 24px 435px;
 }
 
-
 select{ 
    width:200px; 
    height:35px; 
@@ -78,6 +77,11 @@ option{
     justify-content: center;
    
 }
+/* .first-line, .second-line{
+   align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
  .box-container1, 
  .box-container2{
     width: 171px;
@@ -185,7 +189,6 @@ option{
       align-items: center;
       margin: -430px 20px;
       background-color: #ffff;
-       
   }
 
   #Actbtn1, #Actbtn2 {
@@ -200,28 +203,39 @@ option{
       justify-content: center; /* 가로 중앙 정렬 */
       text-align: center; 
   }
+.m1, .m2{
+display: none;
+}
 
-  #btn-container{
+#btn-container{
    display: none;
   }
-  #all-container{
-   display: flex;
-   margin-top: 260px;
-  }
 
-  .first-line, .second-line {
-   justify-content: center;
+.first-line, .second-line {
+      display: flex;
+        column-gap: -65px;
+        margin-top: 30px;
+        
 }
-
-.box-container1, .box-container2 {
-   margin: 10px;
-}
-
 #movieOption-wrapper{
  margin-left: 11%;
  margin-top: 50px;
 }
+
+#all-container{
+  margin-left: -60px;
 }
+ 
+}
+
+ /* 화면 너비가 676.5px 이상 1024px 이하일떄 */
+@media (min-width: 676.5px) and (max-width: 1024px) {
+   .box-container1:nth-child(4),
+   .box-container2:nth-child(4) {
+       display: none;  
+   }
+}
+
 
 @media screen and (max-width: 905px){
    #ActiveButton{
@@ -231,15 +245,14 @@ option{
       display: block;
       display: flex;
       justify-content: center;
-   }
+   } 
 }
-
-
-/* 
-@media (max-width: 754px) { */
 
 /* mobile */
 @media screen and (max-width: 800px) {
+   .movie4, .movie8{
+      display: block;
+   }
    #ActiveButton {
        display: none;
    }
@@ -256,13 +269,18 @@ option{
      #all-container{
       margin-top: 200px;
      }
-     .first-line, .second-line {
-      justify-content: center;
-  }
   
    .box-container2 {
       margin-bottom: 20px;
   }  
+
+ .m1, .m2{
+   display: block;
+ }
+
+#all-container{
+   margin-top: 130px;
+}
 }
 
  
