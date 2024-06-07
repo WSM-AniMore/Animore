@@ -67,9 +67,8 @@
     display: none;
 }
 
-
 /* mobile */
-@media screen and (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 676px) {
     #nav-container {
         position: fixed;
         /*nav바 고정*/
@@ -88,17 +87,15 @@
         right: 0;
         top: 100%;
         z-index: -1;
-        display: none;
-        /* 처음에 안 보여지게 함 */
+        display: none;/* 처음에 안 보여지게 함 */
+        
     }
 
     .nav-item {
         padding: 0.25rem 0;
         margin: 19px 20px auto 20px;
         border-bottom: 1.4px solid var(--line-color1);
-        width: 120px;
-        /*밑줄 길이 120px만큼 늘리기 */
-        transition: all 0.3s ease-in-out;
+        width: 120px; /*밑줄 길이 120px만큼 늘리기 */
     }
 
     .nav-item a {
@@ -158,4 +155,8 @@
     .toggleActive {
         display: block;
     }
+   
 }
+
+
+ 

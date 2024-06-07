@@ -15,6 +15,8 @@ const navToggle = () => {
        hamburgerIcon.classList.toggle("bi-list");
        hamburgerIcon.classList.toggle("bi-x-lg");
  
+
+       
     }
 }
 
