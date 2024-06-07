@@ -1,0 +1,103 @@
+body{
+    font-family: 'Pretendard-Regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(248, 253, 255);
+}
+#login-container{
+    width: 600px;
+    height: 600px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#login-form{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px auto 40px auto;
+    
+    color: rgb(79, 167, 255);
+}
+
+#user-name, #password{
+   padding: 10px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   width: 380px;
+   height: 32px;
+   background-color: rgb(234, 236, 237);
+}
+#user-name{
+    margin-bottom: 25px;
+    width: 380px;
+}
+
+#password{
+    margin-bottom: 25px;
+}
+#save-id{
+    margin-left: -190px;
+    margin-right: 10px;
+    width: 17.5px; /* Adjust the width as needed */
+    height: 17px; /* Adjust the height as needed */
+    cursor: pointer;
+    
+}
+.save-id-label{
+    font-size: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+  
+ 
+
+#sign-in, #sign-up{
+    width: 380px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgb(202, 237, 252);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(95, 95, 95);
+}
+
+#sign-in:hover{
+    background-color: rgb(176, 231, 255);;
+    color: black;
+}
+
+#sign-up:hover{
+    background-color: rgb(176, 231, 255);;
+    color: black;
+}
+
+#sign-in{
+    margin: 20px 0 20px 0;
+     
+}
+
+@media screen and (max-width: 600px) {
+    #login-container{
+        width: 500px;
+        height: 600px;
+      
+    }
+}
+ 
