@@ -24,7 +24,7 @@
                 <li class="nav-item"><a href="search.html">Search<i class="bi bi-search" id="logo"></i></a></li>  
                 <li class="nav-item"><a href="goods.html">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
                 <li class="nav-item"><a href="#">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
-                <li class="nav-item"><a href="#"><div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i></a></li>
+                <li class="nav-item"><a href="login.html"><div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i></a></li>
      
             </ul>
             <!-- 햄버거 바 -->
@@ -155,21 +155,8 @@
 
         
     </main>
-
-    <script>
-        function submitForm(event) {
-            event.preventDefault(); // 폼 제출 기본 동작 막기
-
-            // 검색어 가져오기
-            var searchInput = document.getElementById("search-input").value;
-
-            // 검색어 알림으로 보여주기
-            
-            alert("찾으신 영화인 " + searchInput+ "은 저희 웹사이트에서 정보를 제공합니다.");
-        }
-    </script>
-
     <script src="js/nav.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
