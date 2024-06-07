@@ -203,6 +203,7 @@ body {
     display: none;
 }
 
+/* tablet */
 @media screen and (max-width: 1024px) {
 
     .Good4, .Good8 {
@@ -239,12 +240,14 @@ body {
     }
 }
 
+/* mobile */
 @media screen and (max-width: 800px) {
     #ActiveButton {
         display: none;
     }
 }
 
+/*  */
 @media screen and (max-width: 600px) {
     #SearchText {
         margin-top  : 80px;

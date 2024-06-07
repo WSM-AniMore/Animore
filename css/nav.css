@@ -111,9 +111,7 @@
         color: inherit;
     }
 
-    .nav-item:hover { /*transform 적용 X */
-        transform: none;
-    }
+     
 
     .nav-item a .bi {
         margin-left: 10px;
