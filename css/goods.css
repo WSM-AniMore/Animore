@@ -220,7 +220,7 @@ body {
     #ButtonContainer {
         display: none;
     }
-
+    
     #ActiveButton {
         display: flex;
         justify-content: space-between;
@@ -244,12 +244,14 @@ body {
     }
 }
 
+/* mobile */
 @media screen and (max-width: 800px) {
     #ActiveButton {
         display: none;
     }
 }
 
+/*  */
 @media screen and (max-width: 600px) {
     #SearchText {
         margin-top: 80px;

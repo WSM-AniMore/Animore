@@ -1,10 +1,9 @@
  
 body{
    font-family: 'Pretendard-Regular';
-   background-color: #F2F7FF;
+   background-color: var(--white);
    height: 100%;
    width: 100%;
-   
 }
 .nav-item:nth-child(1) a{
    font-weight: 500;
@@ -31,9 +30,9 @@ body{
 #movieOption-wrapper{
    display: flex;
    column-gap: 20px;
-   margin: 24px auto auto 105px;
+   margin: 24px 435px;
 }
- 
+
 select{ 
    width:200px; 
    height:35px; 
@@ -72,13 +71,17 @@ option{
 }  
   
 #all-container{
-    width: 1072px;
-    height: 620px;
-    background-color: var(--white);
-    border-radius: var(--box-border1);
-    box-shadow: var(--box-shadow2);
-    margin: 190px auto 61px auto;
+    margin: 190px auto 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
 }
+/* .first-line, .second-line{
+   align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
  .box-container1, 
  .box-container2{
     width: 171px;
@@ -86,11 +89,14 @@ option{
     background-color: var(--white);
     border-radius: var(--movie-border);
     box-shadow: var(--box-shadow2);
+    flex-wrap: wrap;
+    width: auto;
     
  }
+ 
 
  .box-container1{
-   margin: 64px 0 0 77px;
+   margin: 45px 0 0 77px;
  }
 
  .box-container2{
@@ -98,10 +104,14 @@ option{
  }
  .first-line{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
  }
  .second-line{
     display: flex;
-    margin-top: 33px;
+    margin: 33px 0 40px 0 ;
+    flex-wrap: wrap;
+    justify-content: center;
  }
 
  .box-container1 img, .box-container2 img{
@@ -166,5 +176,111 @@ option{
  #next:hover{
    transform: scale(1.3);
  }
+
+ #ActiveButton{
+   display: none;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+   #ActiveButton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: -430px 20px;
+      background-color: #ffff;
+  }
+
+  #Actbtn1, #Actbtn2 {
+      box-shadow: var(--box-shadow1);
+      background-color: var(--white);
+      border-radius: 28px;
+      width: 56px;
+      height: 56px;
+      cursor: pointer;
+      display: flex; /* 플렉스 박스로 설정 */
+      align-items: center; /* 세로 중앙 정렬 */
+      justify-content: center; /* 가로 중앙 정렬 */
+      text-align: center; 
+  }
+.m1, .m2{
+display: none;
+}
+
+#btn-container{
+   display: none;
+  }
+
+.first-line, .second-line {
+      display: flex;
+        column-gap: -65px;
+        margin-top: 30px;
+        
+}
+#movieOption-wrapper{
+ margin-left: 11%;
+ margin-top: 50px;
+}
+
+#all-container{
+  margin-left: -60px;
+}
+ 
+}
+
+ /* 화면 너비가 676.5px 이상 1024px 이하일떄 */
+@media (min-width: 676.5px) and (max-width: 1024px) {
+   .box-container1:nth-child(4),
+   .box-container2:nth-child(4) {
+       display: none;  
+   }
+}
+
+
+@media screen and (max-width: 905px){
+   #ActiveButton{
+      display: none;
+   }
+   #btn-container{
+      display: block;
+      display: flex;
+      justify-content: center;
+   } 
+}
+
+/* mobile */
+@media screen and (max-width: 800px) {
+   .movie4, .movie8{
+      display: block;
+   }
+   #ActiveButton {
+       display: none;
+   }
+   #btn-container{
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     #movieOption-wrapper{
+      margin-left: 40px;
+      margin-top: 18px;
+     }
+     #all-container{
+      margin-top: 200px;
+     }
+  
+   .box-container2 {
+      margin-bottom: 20px;
+  }  
+
+ .m1, .m2{
+   display: block;
+ }
+
+#all-container{
+   margin-top: 130px;
+}
+}
 
  
