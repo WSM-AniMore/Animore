@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/ost.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"> <!-- 제목 왼쪽 옆 아이콘 지정 -->
+
+    <title>AniMore</title>
+</head>
+
+<body>
+    <header>
+        <!-- nav -->
+        <nav id="nav-container">
+            <div class="nav-logo">
+                <a href="search.html">AniMore</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="search.html">Search<i class="bi bi-search" id="logo"></i></a></li>
+                <li class="nav-item"><a href="goods.html">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
+                <li class="nav-item"><a href="ost.html">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
+                <li class="nav-item"><a href="login.html">
+                        <div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i>
+                    </a></li>
+
+            </ul>
+
+            <div id="nav-toggle"><i class="bi bi-list"></i></div>
+        </nav>
+    </header>
+
+    <div id="SearchBar">
+        <form action="#" id="SearchForm" method="get" onsubmit="submitForm(event)">
+            <input type="text" id="SearchText" name="SearchBar" placeholder="원하시는 노래 혹은 영화 제목을 검색해주세요">
+            <button id="SearchButton" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
+    </div>
+
+    <div class="AllContainer">
+        <div class="OstContainer">
+            <div class="Ost1 Ost">
+                <img src="images/ost/너의이름은_ost.png" alt="">
+                <div class="p">
+                    <p class="Title">[너의 이름은]</p>
+                    <p class="Singer">RADWIMPS - <span class="St">Nandemonaiya (아무것도 아니야)</span></p>
+                </div>
+            </div>
+            <div class="Ost2 Ost">
+                <img src="images/ost/하이큐_ost.png" alt="">
+                <div class="p">
+                    <p class="Title">[하이큐! 쓰레기장의 결전]</p>
+                    <p class="Singer">SPYAIR - <span class="St">Orange (オレンジ)</span></p>
+                </div>
+            </div>
+            <div class="Ost3 Ost">
+                <img src="images/ost/츠루네_ost.png" alt="">
+                <div class="p">
+                    <p class="Title">[츠루네]</p>
+                    <p class="Singer">Tei - <span class="St">HITOMINAKA (ヒトミナカ)</span></p>
+                </div>
+            </div>
+            <div class="Ost4 Ost">
+                <img src="images/ost/체인소맨_ost.png" alt="">
+                <div class="p">
+                    <p class="Title">[체인소맨]</p>
+                    <p class="Singer">Kenshi Yonezu - <span class="St">KICK BACK</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

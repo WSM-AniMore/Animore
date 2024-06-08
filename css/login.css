@@ -11,7 +11,7 @@ body{
     height: 600px;
     padding: 40px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #ffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 10px;
@@ -39,11 +39,11 @@ h2{
    border: none;
    width: 380px;
    height: 32px;
-   background-color: rgb(234, 236, 237);
+   background-color: #F8F5F5;
 }
+
 #user-name{
     margin-bottom: 25px;
-    width: 380px;
 }
 
 #password{
@@ -62,15 +62,13 @@ h2{
     color: gray;
     cursor: pointer;
 }
-
-  
  
 
 #sign-in, #sign-up{
     width: 380px;
     height: 55px;
     border-radius: 5px;
-    background-color: rgb(202, 237, 252);
+    background-color:#DEE0FF;
     outline: none;
     border: none;
     font-size: 1rem;
@@ -79,17 +77,17 @@ h2{
 }
 
 #sign-in:hover{
-    background-color: rgb(176, 231, 255);;
+    background-color:  rgb(136, 184, 233);
     color: black;
 }
 
 #sign-up:hover{
-    background-color: rgb(176, 231, 255);;
+    background-color:  rgb(136, 184, 233);
     color: black;
 }
 
 #sign-in{
-    margin: 20px 0 20px 0;
+    margin: 30px 0 20px 0;
      
 }
 
