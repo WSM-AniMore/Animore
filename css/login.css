@@ -62,8 +62,6 @@ h2{
     color: gray;
     cursor: pointer;
 }
-
-  
  
 
 #sign-in, #sign-up{
@@ -89,7 +87,7 @@ h2{
 }
 
 #sign-in{
-    margin: 20px 0 20px 0;
+    margin: 30px 0 20px 0;
      
 }
 
