@@ -1,5 +1,5 @@
 body {
-    font-family:'Pretendard-Regular';
+    font-family: 'Pretendard-Regular';
 }
 
 .nav-item:hover {
@@ -10,24 +10,25 @@ body {
     color: rgb(67, 67, 67);
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     font-weight: 600;
 }
-  
+
 #nav-container {
-    position: fixed; /*nav바 고정*/
+    position: fixed;
+    /*nav바 고정*/
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
 }
- 
-#SearchBar{
+
+#SearchBar {
     display: flex;
     justify-content: center;
     align-items: center;
-}      
- 
+}
+
 #SearchText {
     margin-top: 100px;
     width: 395.001px;
@@ -35,7 +36,8 @@ body {
     border: none;
     border-bottom: 1px solid var(--line-color1);
     font-family: 'Pretendard-Regular';
-    outline: none; /*클릭시 테두리 제거*/
+    outline: none;
+    /* 클릭 시 테두리 제거 */
 }
 
 #SearchButton {
@@ -44,4 +46,60 @@ body {
     margin-left: -23px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.Ost1>img {
+    width: 135px;
+    height: 138px;
+    margin: 25px 27px 3px;
+}
+
+.Ost2>img, .Ost3>img, .Ost4>img {
+    width: 135px;
+    height: 138px;
+    margin: 3px 27px;
+}
+
+.AllContainer {
+    margin: 40px 150px;
+    width: 1096px;
+    height: 621px;
+    border-radius: 5px;
+    background: #F5F5F5;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+}
+
+.OstContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.Ost {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.Ost1, .Ost2, .Ost3, .Ost4 {
+    display: flex;
+    align-items: center;
+}
+
+.Title {
+    color: rgba(83, 82, 82, 0.97);
+    font-size: 12px;
+}
+
+.Singer {
+    color: #848282;
+    font-size: 10px;
+    line-height: 22px;
+}
+
+.St {
+    font-size: 13px;
+    color: black;   
 }
