@@ -37,10 +37,7 @@ select{
    width:200px; 
    height:35px; 
    padding: 10px;
-   border-style:inset;/*select 내부 그림자*/ 
-   -moz-box-shadow: inset 1px 1px 3px rgba(0,38,90,1); 
-   -webkit-box-shadow: inset 1px 1px 3px rgba(0,38,90,1); 
-   box-shadow: inset 1px 1px 3px rgba(0,38,90,1); 
+   box-shadow: inset 1px 1px 1px rgba(0,38,90,1); 
    
    }
    
@@ -52,7 +49,7 @@ option{
    width: 80px;
    height: 20px;
    border-radius: var(--btn-border2);
-   border: 0.5px solid var(--border-color1);
+   border: 0.3px solid var(--border-color1);
    background-color: var(--white);
    outline: none;
    font-family: 'Pretendard-Regular';
