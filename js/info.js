@@ -8,9 +8,9 @@ function checkInventory() {
         inventoryStatus.classList.remove('hidden');
         statusMessage.textContent = '재고 정보를 불러오는 중...';
 
-         
+
         setTimeout(() => {
-             
+
             const inventoryData = {
                 cinema1: '특전이 충분합니다.',
                 cinema2: '특전이 5개 남았습니다. (5/100)',

@@ -16,7 +16,7 @@
         <!-- nav -->
         <nav id="nav-container">
             <div class="nav-logo">
-                <a href="#">AniMore</a>
+                <a href="index.html">AniMore</a>
             </div>
 
             <ul class="nav-menu">
@@ -36,13 +36,13 @@
         <div id="login-container">
             <h2>Sign In</h2>
             <form action="#" id="login-form">
-                <input type="text" placeholder="Username" id="user-name" required > <!-- 서버로 제출되기 전에 필요함 : required -->
-                <input type="password" placeholder="Password" id="password">
+                <input type="text" placeholder="Username" id="user-name" required autocomplete="off" > <!-- 서버로 제출되기 전에 필요함 : required -->
+                <input type="password" placeholder="Password" id="password" autocomplete="off">
                 <label for="save-id" class="save-id-label">
                     <input type="checkbox" id="save-id"> 아이디 저장하기
                 </label>
                  <button type="submit" id="sign-in">로그인</button>
-                 <button id="sign-up">회원가입</button>
+                 <button type="button" id="sign-up">회원가입</button>
         
             </form>
         </div>
