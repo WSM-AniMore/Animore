@@ -60,7 +60,13 @@ body {
     margin: 3px 27px;
 }
 
+.con {
+    display: flex;
+    justify-content: center;
+}
+
 .AllContainer {
+    display: flex;  /* 저절로 row-wrap이 됨 기본 속성 이런 거임 */
     margin: 40px 150px;
     width: 1096px;
     height: 621px;
@@ -68,12 +74,14 @@ body {
     background: #F5F5F5;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     justify-content: center;
+    align-items: center;    /* 수평적 정렬 */
 }
 
 .OstContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 50%;
 }
 
 .Ost {
@@ -102,4 +110,22 @@ body {
 .St {
     font-size: 13px;
     color: black;   
+}
+
+.OOst {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 400px;
+    padding: 80px 0;
+    padding-left: 40px;
+    border-left: 1px solid black;
+    margin-left: 30px;
+}
+
+.oo {
+    width: 50%;
+    height: 40px;
+    background-color: #000000;
+    margin: 5px 0;
 }
