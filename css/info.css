@@ -16,7 +16,7 @@ main {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     box-sizing: border-box;
-    margin-top: 300px;
+    margin-top: 400px;
     background-image: url();
 }
 
@@ -25,7 +25,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 500px; 
+    margin-top: 600px; 
 }
 
 .poster {
@@ -84,11 +84,6 @@ button:hover {
     padding: 50px;
 }
 
-.line1, .line2, .line5,.line6,.line8 {
-    font-weight: bold;
-    color: #333;
-}
-
 .video{
     margin-top: 50px;
 }
@@ -96,6 +91,7 @@ button:hover {
 p{
     margin-bottom: 10px;
     color: #3d3d3d;
+    line-height: 20px;
 }
  
 
