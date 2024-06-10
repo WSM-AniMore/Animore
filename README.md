@@ -24,4 +24,4 @@ Name | Part
 ------------ | ------------- 
 [배주연](https://github.com/juyeon-Bae?tab=repositories)| 기획, 디자인, 개발
 [정상미](https://github.com/beebe0mg) |기획, 디자인, 개발
-|
+
