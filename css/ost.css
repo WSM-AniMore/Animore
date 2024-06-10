@@ -66,6 +66,7 @@ body {
 }
 
 .AllContainer {
+    position: relative;
     display: flex;  /* 저절로 row-wrap이 됨 기본 속성 이런 거임 */
     margin: 40px 150px;
     width: 1096px;
@@ -116,8 +117,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 400px;
-    padding: 80px 0;
+    height: 500px;
     padding-left: 40px;
     border-left: 1px solid black;
     margin-left: 30px;
@@ -125,7 +125,67 @@ body {
 
 .oo {
     width: 50%;
-    height: 40px;
+    height: 45px;
     background-color: #000000;
     margin: 5px 0;
+    border-radius: 4px;
+    background: #D5D5D5;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oo>.Title {
+    color: #6F6F6F;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 7px;
+}
+
+.St {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 7px;
+}
+
+.CD > img {
+    width: 351px;
+    height: 630px;
+    border-radius: 5px;
+    /* margin: -412px 0 0 160px; */
+}
+
+.CD {
+    position: absolute;
+    top: 0;  /* 필요에 따라 값 조정 */
+    right: -4px;
+}
+
+@media screen and (max-width: 600px) {
+    #SearchText {
+        margin-top: 80px;
+        width: 302.041px;
+    }
+
+    .CD > img {
+        display: none;
+    }
+
+    .OOst {
+        display: none;
+    }
+
+    .AllContainer {
+        box-shadow: none;
+        background-color: white;
+    }
 }
