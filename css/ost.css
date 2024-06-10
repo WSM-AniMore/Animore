@@ -170,12 +170,7 @@ body {
     right: -4px;
 }
 
-@media screen and (max-width: 600px) {
-    #SearchText {
-        margin-top: 80px;
-        width: 302.041px;
-    }
-
+@media screen and (max-width: 880px) {
     .CD > img {
         display: none;
     }
@@ -185,7 +180,14 @@ body {
     }
 
     .AllContainer {
+        background: #FFFFFF;
         box-shadow: none;
-        background-color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #SearchText {
+        margin-top: 80px;
+        width: 302.041px;
     }
 }
