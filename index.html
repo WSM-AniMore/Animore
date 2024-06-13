@@ -37,15 +37,21 @@
   
         <!-- 검색바 -->
         <div id="searchBar-container"> 
-            <form action="#" id="search-form" method="get" onsubmit="submitForm(event)">
-                <input type="text" id="search-input" name="search-bar" placeholder="원하시는 영화를 검색해주세요">
+            <form action="#" id="search-form" method="get">
+                <input type="text" id="search-input" name="search-bar" placeholder="원하시는 영화를 검색해주세요" autocomplete="off">
                 <button id="search-button" type="submit">
                     <i class="bi bi-search"></i>
                 </button>
             </form>
         </div>
 
-        <!-- 날짜별 주제별 옵션 -->
+       
+    </header>
+     
+    <main>
+        
+        <div id="all-container"> 
+               <!-- 날짜별 주제별 옵션 -->
          <div id="movieOption-wrapper"> 
             <div class="select-container">
              <select name="day" id="choose">
@@ -69,12 +75,7 @@
                 </select>
             </div>
         </div>
-    </header>
-     
-    <main>
         
-        <div id="all-container"> 
-             
         <div class="first-line"> 
         <div class="box-container1">
            <a href="Info/info.html" target="_blank">
