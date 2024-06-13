@@ -55,11 +55,11 @@
 }
 
 .nav-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .nav-logo a:hover {
-    color: rgb(67, 67, 67);
+    color: rgb(36, 36, 36);
 }
 
 #nav-toggle,
