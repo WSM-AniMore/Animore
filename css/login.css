@@ -7,14 +7,17 @@ body{
     background-color: rgb(248, 253, 255);
 }
 #login-container{
+
     width: 600px;
     height: 600px;
     padding: 40px;
     box-sizing: border-box;
-    background-color: #ffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 10px;
+    background-color: #e3e3e3;
+
+    border-radius: 20px;
+    background: rgba(247, 243, 234, 0.28);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(9px);
 }
 
 #login-form{
