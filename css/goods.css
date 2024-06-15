@@ -93,6 +93,7 @@ body {
 }
 .AllContainer{
     margin-top: 60px;
+    height: 600px;
 }
 .GoodsContainer1, .GoodsContainer2 {
     display: flex;
@@ -171,8 +172,7 @@ body {
         justify-content: space-between;
         align-items: center;
         margin: -370px 20px;
-        background-color: #ffff;
-         
+        background-color: #ffff;    
     }
 
     #Actbtn1, #Actbtn2 {
