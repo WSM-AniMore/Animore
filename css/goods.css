@@ -190,7 +190,7 @@ body {
 }
 
 /* mobile */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 804px) {
     #ActiveButton {
         display: none;
     }
