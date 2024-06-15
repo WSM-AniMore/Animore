@@ -136,64 +136,6 @@ body {
     gap: 6px;
 }
 
-#ButtonContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
- 
-#btn1, #btn2, #btn3{
-    width: 33px;
-    height: 33px;
-    border-radius: var(--btn-border1);
-    font-family: 'Pretendard-Regular';
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-    display: flex; /* 플렉스 박스로 설정 */
-    align-items: center; /* 세로 중앙 정렬 */
-    justify-content: center; /* 가로 중앙 정렬 */
-}
-
-#btn1 {
-    background-color: var(--btn-color3);
-    color: var(--white);
-
-}
-
-#btn2, #btn3 {
-    background-color: var(--btn-color2);
-    color: var(--text2);
-}
-
-#btn3 {
-    margin-right: 10px;
-}
- 
-#btn1:hover, #btn2:hover, #btn3:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-}
- 
-#btn0, #btn4 {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: var(--btn-border1);
-    background-color: var(--btn-color1);
-    border: none;
-    font-size: 12px;
-    display: flex; /* 플렉스 박스로 설정 */
-    align-items: center; /* 세로 중앙 정렬 */
-    justify-content: center; /* 가로 중앙 정렬 */
-}
- 
-#btn0:hover, #btn4:hover {
-    transform: scale(1.3);
-    transition: transform 0.5s ease-in-out;
-}
-
 #ActiveButton{
     display: none;
 }
