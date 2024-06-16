@@ -65,7 +65,7 @@ body {
     justify-content: center;
 }
 
-#ost1, #ost2, #ost3, #ost4{
+#ost1, #ost2, #ost3, #ost4, #ost5, #ost6, #ost7, #ost8{
     cursor: pointer;
     
 }
@@ -73,6 +73,7 @@ body {
     transform: scale(1.09);
     transition: transform 0.5s ease-in-out;
 }
+
 .oo{
     cursor: pointer;
 }
