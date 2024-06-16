@@ -71,7 +71,7 @@ option{
 }  
   
 #all-container{
-    margin: 190px auto 40px auto;
+    margin: 150px auto 40px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -60,6 +60,7 @@ main {
     color: #555;
 }
 
+
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -98,11 +99,12 @@ p{
 .container {
     max-width: 600px;
     margin: 70px auto;
-    padding: 40px;
+    padding: 50px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+    
 }
 
 h1 {
@@ -138,6 +140,13 @@ select:focus {
     outline: none;
 }
 
+#cinemaSelect {
+    display: block;
+    margin: 0 auto;
+    margin-right: 10px;  
+}
+
+
 #inventoryStatus {
     margin-top: 20px;
     text-align: center;
@@ -146,7 +155,7 @@ select:focus {
 #inventoryStatus h2 {
     font-size: 1.5rem;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     border-bottom: 2px solid #e7e7e7;
     padding-bottom: 10px;
 }
