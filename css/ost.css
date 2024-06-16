@@ -192,6 +192,10 @@ body {
 }
 
 @media screen and (max-width: 1040px) {
+    .Ost:hover {
+        transform: scale(1.02);
+        transition: transform 0.5s ease-in-out;
+    }
     .sori {
         display: flex;
     }
@@ -207,6 +211,7 @@ body {
         background: #FFFFFF;
         box-shadow: none;
     }
+
     #SearchText {
         margin-top: 80px;
         width: 302.041px;
@@ -251,7 +256,7 @@ body {
 
 @media screen and (max-width: 700px){
     .AllContainer {
-        height: 1000px;
+        height: 100px;
     }
     .Ost {
         width: 90%;
