@@ -65,6 +65,21 @@ body {
     justify-content: center;
 }
 
+#ost1, #ost2, #ost3, #ost4{
+    cursor: pointer;
+    
+}
+#ost1:hover, #ost2:hover, #ost3:hover, #ost4:hover{
+    transform: scale(1.09);
+    transition: transform 0.5s ease-in-out;
+}
+.oo{
+    cursor: pointer;
+}
+.oo:hover{
+    transform: scale(1.08);
+    transition: transform 0.5s ease-in-out;
+}
 .AllContainer {
     position: relative;
     display: flex;  /* 저절로 row-wrap이 됨 기본 속성 이런 거임 */
