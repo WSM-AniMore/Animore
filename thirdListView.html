@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniMore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+  
+</head>
+<body>
+    
+    <header>
+        <!-- nav -->
+        <nav id="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">AniMore</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Search<i class="bi bi-search" id="logo"></i></a></li>  
+                <li class="nav-item"><a href="goods.html">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
+                <li class="nav-item"><a href="ost.html">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
+                <li class="nav-item"><a href="login.html"><div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i></a></li>
+     
+            </ul>
+            <!-- 햄버거 바 -->
+            <div id="nav-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+
+ 
+  
+        <!-- 검색바 -->
+        <div id="searchBar-container"> 
+            <form action="#" id="search-form" method="get">
+                <input type="text" id="search-input" name="search-bar" placeholder="원하시는 영화를 검색해주세요" autocomplete="off">
+                <button id="search-button" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+
+       
+    </header>
+     
+    <main>
+        
+        <div id="all-container"> 
+               
+        <div class="first-line"> 
+        <div class="box-container1">
+           <a href="Info/info3-1.html" >
+            <img src="images/search/엘리멘탈.png" alt="">    
+            <p class="title">엘리멘탈</p>
+            <p class="date">2023.6.16</p></a> 
+        </div> 
+
+        <div class="box-container1">
+            <a href="Info/info3-2.html">
+            <img class="movie-img" src="images/search/모아나.png" alt=""> 
+            <p class="title">모아나</p>
+            <p class="date">2009.07.30</p></a>
+        </div> 
+
+        <div class="box-container1">
+            <a href="Info/info3-3.html" >
+                <img src="images/search/빅히어로.png" alt=""> 
+            <p class="title">빅 히어로</p>
+            <p class="date">2011.02.10</p></a>
+        </div> 
+
+        <div class="m1 box-container1">
+            <a href="Info/info3-4.html">
+                <img src="images/search/인어공주.png" alt=""> 
+            <p class="title">인어공주</p>
+            <p class="date">2010.08.05</p></a>
+        </div> 
+    </div>
+       
+    <div class="second-line"> 
+    <div class="box-container2">
+        <a href="Info/info3-5.html">
+            <img src="images/search/위시.png" alt=""> 
+        <p class="title">위시</p>
+        <p class="date">2023.11.22</p></a>
+    </div> 
+
+    <div class="box-container2">
+        <a href="Info/info3-6.html">
+            <img src="images/search/알라딘.png" alt=""> 
+        <p class="title">알라딘</p>
+        <p class="date">2019.05.24</p></a>
+    </div> 
+
+    <div class="box-container2">
+        <a href="Info/info3-7.html">
+            <img src="images/search/뮬란.png" alt=""> 
+        <p class="title">뮬란</p>
+        <p class="date">1998.06.05</p></a>
+    </div> 
+
+    <div class="m2 box-container2">
+        <a href="Info/info3-8.html">
+            <img src="images/search/매리다.png" alt="">
+        <p class="title">메리다와 마법의 숲</p>
+        <p class="date">2012.09.27</p></a>
+    </div> 
+        </div>
+            </div>
+
+    
+        
+
+            <div id="btn-container">
+                <a href="secondListView.html"><button id="before"><i class="bi bi-chevron-left"></i></button></a>
+                <a href="index.html"><button id="btn1"> 1</button></a>
+                <a href="secondListView.html"><button id="btn2">2</button></a>
+                <a href="thirdListView.html"><button id="btn3">3</button></a>
+                <a href="index.html"><button id="next"><i class="bi bi-chevron-right"></i></button></a>
+    
+            </div>
+
+        <div id="ActiveButton">
+            <a href="secondListView.html"><div id="Actbtn1"><i class="bi bi-arrow-left"></i></div></a>
+            <a href="index.html"><div id="Actbtn2"><i class="bi bi-arrow-right"></i></div></a>
+        </div>
+
+
+
+        
+    </main>
+    <script src="js/nav.js"></script>
+    <script src="js/thirdListView.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>AniMore</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/info.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
+  
+</head>
+<body>
+    <header>
+        <!-- nav -->
+        <nav id="nav-container">
+            <div class="nav-logo">
+                <a href="/index.html">AniMore</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/index.html">Search<i class="bi bi-search" id="logo"></i></a></li>  
+                <li class="nav-item"><a href="/goods.html">Goods<i class="bi bi-bag-dash" id="logo"></i></a></li>
+                <li class="nav-item"><a href="/ost.html">OST<i class="bi bi-music-note-list" id="logo"></i></a></li>
+                <li class="nav-item"><a href="/login.html"><div class="text">마이페이지</div><i class="bi bi-person-circle" id="mypage-logo"></i></a></li>
+     
+            </ul>
+            <!-- 햄버거 바 -->
+            <div id="nav-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+
+        <div id="searchBar-container"> 
+            <form action="#" id="search-form" method="get" onsubmit="submitForm(event)">
+                <input type="text" id="search-input" name="search-bar" placeholder="원하시는 영화를 검색해주세요">
+                <button id="search-button" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+        
+</header>
+    <main>
+        
+       <div id="all-container">
+        
+        <img src="/images/search/칩과데일.png" alt="" class="poster">
+
+        <div id="movieinfo-container">
+            <h3>칩과 데일: 다람쥐 구조대</h3>
+            
+            <ul class="info-menu">
+                <li class="info-item">개봉일 : 2024-02-14</li>
+                <li class="info-item">감독: 소토자키 하루오</li>
+                <li class="info-item">상영시간 : 103분</li>
+                <li class="info-item">등급 : 15세 이상 관람가</li>
+            </ul>
+
+           <a href="https://namu.wiki/w/%EC%B9%A9%EA%B3%BC%20%EB%8D%B0%EC%9D%BC:%20%EB%8B%A4%EB%9E%8C%EC%A5%90%20%EA%B5%AC%EC%A1%B0%EB%8C%80"><button>더 많은 정보</button></a>
+        </div>
+       </div>
+     
+       </div>
+       
+        
+    <div class="detail-container">
+        
+        <div class="detail">
+           <p class="line1">‘탄지로’와 상현 4 ‘한텐구’의 목숨을 건 혈투와,<br> ‘무잔’과의 최종 국면을 앞둔 귀살대원들의 마지막 훈련을 그린 영화</p>
+            
+            <div class="video">
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/l9t_CzSMEh0?si=8A-2ArwWiHv3QIjy" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>
+       <div class="container">
+        <h1>애니메이션 특전 현황</h1>
+        <label for="cinemaSelect">영화관 선택:</label>
+        <select id="cinemaSelect" onchange="checkInventory()">
+            <option value="">영화관을 선택하세요</option>
+            <option value="cinema1">CGV 명동</option>
+            <option value="cinema2">롯데시네마 산본피트인</option>
+            <option value="cinema3">메가박스 여수점</option>
+            <option value="cinema4">공간디브이디영화관</option>
+            <option value="cinema5">CGV 강남</option>
+            <option value="cinema6">CGV 광주하남</option>
+            <option value="cinema7">메가박스 대전유성</option>
+            <option value="cinema8">롯데시네마 통영</option>
+            <option value="cinema9">CGV 익산</option>
+            <option value="cinema10">CGV 목포 평화 광장</option>
+        </select>
+        <div id="inventoryStatus" class="hidden">
+            <h2>특전 재고 현황</h2>
+            <p id="statusMessage">재고 정보를 불러오는 중...</p>
+        </div>
+    </div>
+   
+     
+    </main>
+
+
+    
+   <script src="/js/nav.js"></script>
+   <script src="/js/info.js"></script>
+</body>
+
+ 
+
+</html>

@@ -30,9 +30,12 @@ body{
 #movieOption-wrapper{
    display: flex;
    column-gap: 20px;
-   margin: 24px 435px;
+   /* margin: 24px 435px; */
+   position: absolute;
+   left: 26%;
+   top: 18%;
 }
-
+ 
 select{ 
    width:200px; 
    height:35px; 
@@ -73,6 +76,8 @@ option{
     flex-wrap: wrap;
     justify-content: center;
    
+    /* width: 100%; */
+   
 }
 /* .first-line, .second-line{
    align-items: center;
@@ -103,6 +108,7 @@ option{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
  }
  .second-line{
     display: flex;
@@ -218,16 +224,37 @@ display: none;
         margin-top: 30px;
         
 }
+/* #movieOption-wrapper{
+   margin-left: 10%;
+} */
 #movieOption-wrapper{
- margin-left: 11%;
- margin-top: 50px;
+   position: absolute;
+   left: 19%;
 }
-
 #all-container{
   margin-left: -60px;
 }
  
 }
+
+@media (min-width:704px) and (max-width:801px) {
+   #movieOption-wrapper{
+      position: absolute;
+      top: 20%;
+   }
+}
+
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  #movieOption-wrapper{
+  margin-top: 20px;
+  }
+   .box-container1{
+      margin-top: -10px;
+   } 
+}
+
+
 
  /* 화면 너비가 676.5px 이상 1024px 이하일떄 */
 @media (min-width: 676.5px) and (max-width: 1024px) {
@@ -235,8 +262,15 @@ display: none;
    .box-container2:nth-child(4) {
        display: none;  
    }
+    
 }
-
+@media screen and (max-width:1280px) {
+   #movieOption-wrapper{
+      position: absolute;
+      top: 15%;
+      left: 19%;
+   }
+}
 
 @media screen and (max-width: 905px){
    #ActiveButton{
@@ -262,10 +296,17 @@ display: none;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: -55px;
+      margin-bottom: 30px;
      }
-     #movieOption-wrapper{
+     /* #movieOption-wrapper{
       margin-left: 40px;
       margin-top: 18px;
+     } */
+     #movieOption-wrapper{
+      position: absolute;
+      left: 10%;
+      top:17%
      }
      #all-container{
       margin-top: 200px;
@@ -280,8 +321,10 @@ display: none;
  }
 
 #all-container{
-   margin-top: 130px;
+   margin-top: 140px;
 }
 }
+
+ 
 
  
