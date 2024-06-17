@@ -63,6 +63,14 @@ body {
 .con {
     display: flex;
     justify-content: center;
+    position: relative;  
+}
+.OstContainer, .OOst {
+    position: relative;
+    z-index: 10; 
+}
+.cd{
+    z-index: 1;
 }
 
 #ost1, #ost2, #ost3, #ost4, #ost5, #ost6, #ost7, #ost8{
