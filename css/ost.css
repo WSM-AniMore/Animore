@@ -200,6 +200,30 @@ body {
     display: none;
 }
 
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    opacity: 0.4;
+}
+
+.ddang {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1133px) {
+    .Singer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .St {
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 1040px) {
     .Ost:hover {
         transform: scale(1.02);
@@ -254,12 +278,8 @@ body {
         padding: 10px;
         margin: 0;
     }
-    .Singer {
-        display: flex;
-        flex-direction: column;
-    }
-    .St {
-        margin: 0;
+    .icon {
+        margin-right: 10px;
     }
 }
 
