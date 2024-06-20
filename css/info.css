@@ -6,6 +6,12 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
  
 main {
     width: 100%;
@@ -99,12 +105,14 @@ p{
 .container {
     max-width: 600px;
     margin: 70px auto;
-    padding: 50px;
+    padding: 50px 0;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    
 }
 
 h1 {
@@ -143,7 +151,8 @@ select:focus {
 #cinemaSelect {
     display: block;
     margin: 0 auto;
-    margin-right: 10px;  
+    width: 85%;
+    /* margin-right: 10px;   */
 }
 
 
@@ -213,7 +222,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     #all-container {
         flex-direction: row;  
         /* margin-top: 20rem; */
@@ -236,6 +245,7 @@ button:hover {
         font-size: 14px;
         padding: 10px;
     }
+    
 }
 
 @media (max-width: 800px) {
@@ -260,20 +270,26 @@ button:hover {
         font-size: 12px;
         padding: 8px;
     }
-    .video{
+
+    .detail > .video {
+        margin: 45px 0 5px;
+        width: 500px;
+    }
+    .video > iframe{ 
+        width: 100%;
+    }
+    /* .video{
         
         margin: 45px 0 5px -18px;
         width: 300px;
-    }
+    } */
     
 }
  
 
-@media (max-width: 636px) {
-    .videos {
-        
-         width: 400px;
-         height: 300px;
+@media (max-width: 567px) {
+    .detail > .video {
+        width: 400px;
     }
  
 }
