@@ -8,8 +8,11 @@ const navToggle = () => {
     // 메뉴 리스트
     const navList = document.getElementsByClassName('nav-menu')[0];
 
+    const blurDiv = document.getElementsByClassName("blur")[0];
+
     hamburgerButton.onclick = () => {
         navList.classList.toggle("toggleActive");
+        blurDiv.classList.toggle("show");
 
         // 아이콘 변경
        hamburgerIcon.classList.toggle("bi-list");
