@@ -47,46 +47,46 @@ document.querySelectorAll('.Ost img, .oo').forEach(item => {
 });
 
 const OstToggle = () => {
-    const ToggleI0 = document.getElementsByClassName("bi-pause-fill")[0];
-    const ToggleI1 = document.getElementsByClassName("bi-pause-fill")[1];
-    const ToggleI2 = document.getElementsByClassName("bi-pause-fill")[2];
-    const ToggleI3 = document.getElementsByClassName("bi-pause-fill")[3];
-    const ToggleI4 = document.getElementsByClassName("bi-pause-fill")[4];
-    const ToggleI5 = document.getElementsByClassName("bi-pause-fill")[5];
-    const ToggleI6 = document.getElementsByClassName("bi-pause-fill")[6];
-    const ToggleI7 = document.getElementsByClassName("bi-pause-fill")[7];
+    const ToggleI0 = document.getElementsByClassName("bi-play-fill")[0];
+    const ToggleI1 = document.getElementsByClassName("bi-play-fill")[1];
+    const ToggleI2 = document.getElementsByClassName("bi-play-fill")[2];
+    const ToggleI3 = document.getElementsByClassName("bi-play-fill")[3];
+    const ToggleI4 = document.getElementsByClassName("bi-play-fill")[4];
+    const ToggleI5 = document.getElementsByClassName("bi-play-fill")[5];
+    const ToggleI6 = document.getElementsByClassName("bi-play-fill")[6];
+    const ToggleI7 = document.getElementsByClassName("bi-play-fill")[7];
 
     ToggleI0.onclick = () => {
-        ToggleI0.classList.toggle("bi-play-fill");
         ToggleI0.classList.toggle("bi-pause-fill");
+        ToggleI0.classList.toggle("bi-play-fill");
     }
     ToggleI1.onclick = () => {
-        ToggleI1.classList.toggle("bi-play-fill");
         ToggleI1.classList.toggle("bi-pause-fill");
+        ToggleI1.classList.toggle("bi-play-fill");
     }
     ToggleI2.onclick = () => {
-        ToggleI2.classList.toggle("bi-play-fill");
         ToggleI2.classList.toggle("bi-pause-fill");
+        ToggleI2.classList.toggle("bi-play-fill");
     }
     ToggleI3.onclick = () => {
-        ToggleI3.classList.toggle("bi-play-fill");
         ToggleI3.classList.toggle("bi-pause-fill");
+        ToggleI3.classList.toggle("bi-play-fill");
     }
     ToggleI4.onclick = () => {
-        ToggleI4.classList.toggle("bi-play-fill");
         ToggleI4.classList.toggle("bi-pause-fill");
+        ToggleI4.classList.toggle("bi-play-fill");
     }
     ToggleI5.onclick = () => {
-        ToggleI5.classList.toggle("bi-play-fill");
         ToggleI5.classList.toggle("bi-pause-fill");
+        ToggleI5.classList.toggle("bi-play-fill");
     }
     ToggleI6.onclick = () => {
-        ToggleI6.classList.toggle("bi-play-fill");
         ToggleI6.classList.toggle("bi-pause-fill");
+        ToggleI6.classList.toggle("bi-play-fill");
     }
     ToggleI7.onclick = () => {
-        ToggleI7.classList.toggle("bi-play-fill");
         ToggleI7.classList.toggle("bi-pause-fill");
+        ToggleI7.classList.toggle("bi-play-fill");
     }
 }
 
