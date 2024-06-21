@@ -9,6 +9,9 @@ body{
    font-weight: 500;
    font-size: 1.1rem;
 }
+.nav-item a:hover{
+   font-weight: 600;
+}
 
 #searchBar-container{
    display: flex;
