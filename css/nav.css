@@ -78,7 +78,7 @@
 }
 
 /* mobile */
-@media (min-width: 500px) and (max-width: 676px) {
+@media (max-width: 676px) {
     #nav-container {
         position: fixed;
         /*nav바 고정*/
