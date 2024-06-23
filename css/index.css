@@ -327,6 +327,16 @@ display: none;
    margin-top: 140px;
 }
 }
+@media screen and (max-width: 450px) {
+   #search-input {
+      margin-top: 80px;
+      width: 302.041px;
+  }
+
+  #all-container {
+   margin-top: 80px;
+  }
+}
 
  
 
