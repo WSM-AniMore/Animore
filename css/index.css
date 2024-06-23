@@ -32,37 +32,12 @@
     background-color: transparent;
  }
 
- #movieOption-wrapper {
-    display: flex;
-    column-gap: 20px;
-    /* margin: 24px 435px; */
-    position: absolute;
-    left: 26%;
-    top: 18%;
- }
-
  select {
     width: 200px;
     height: 35px;
     padding: 20px;
     box-shadow: inset 1px 1px 1px rgba(0, 38, 90, 1);
 
- }
-
- option {
-    background-color: rgb(228, 228, 228);
- }
-
- #choose {
-    width: 80px;
-    height: 20px;
-    border-radius: 10px;
-    border: 0.3px solid var(--border-color1);
-    background-color: var(--white);
-    outline: none;
-    font-family: 'Pretendard-Regular';
-    font-size: var(--option-size);
-    padding: 2px;
  }
 
  #search-button {
@@ -81,16 +56,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    /* width: 100%; */
-
  }
-
- /* .first-line, .second-line{
-   align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
+ 
  .box-container1,
  .box-container2 {
     width: 171px;

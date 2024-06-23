@@ -286,9 +286,18 @@ button:hover {
 
 @media (max-width: 567px) {
     .detail > .video {
-        width: 400px;
+        width: 300px;
     }
  
+    #movieinfo-container {
+        margin-left: 10px;
+    }
+
+    #all-container {
+        margin: 0;
+        margin-top: 600px;
+    }
 }
+
 
 
