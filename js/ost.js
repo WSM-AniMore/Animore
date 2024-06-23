@@ -22,72 +22,49 @@ const tracks = {
 
 let currentTrack = '';  // 현재 재생 중인 트랙의 key값을 저장하는 변수 
 
-document.querySelectorAll('.Ost img, .oo').forEach(item => {
+document.querySelectorAll('.Ost img, .oo, .icon').forEach(item => {
     item.addEventListener('click', event => {
-        let trackId = event.target.id || event.target.querySelector('img')?.id;
-        if (item.classList.contains('oo')) {
-            trackId = item.id;
-        }
+        let trackId = event.target.id || event.target.closest('.Ost')?.querySelector('img')?.id || event.target.closest('.oo')?.id;
+        if (!trackId) return;
 
         const trackSrc = tracks[trackId];
 
         if (currentTrack === trackId) {
             if (audioPlayer.paused) {
-                audioPlayer.play();
+                audioPlayer.play();  
+                updateIcons(trackId, false);//재생
             } else {
-                audioPlayer.pause();
+                audioPlayer.pause();  
+                updateIcons(trackId, true);//일시정지
             }
-        } else {
+        } else {//다른 트랙 선택한 경우
             audioPlayer.src = trackSrc;
             audioPlayer.play();
+            updateIcons(currentTrack, true);
+            updateIcons(trackId, false);
             currentTrack = trackId;
         }
- 
     });
 });
 
-const OstToggle = () => {
-    const ToggleI0 = document.getElementsByClassName("bi-play-fill")[0];
-    const ToggleI1 = document.getElementsByClassName("bi-play-fill")[1];
-    const ToggleI2 = document.getElementsByClassName("bi-play-fill")[2];
-    const ToggleI3 = document.getElementsByClassName("bi-play-fill")[3];
-    const ToggleI4 = document.getElementsByClassName("bi-play-fill")[4];
-    const ToggleI5 = document.getElementsByClassName("bi-play-fill")[5];
-    const ToggleI6 = document.getElementsByClassName("bi-play-fill")[6];
-    const ToggleI7 = document.getElementsByClassName("bi-play-fill")[7];
+//toggle기능
+const updateIcons = (trackId, isPaused) => {
+    document.querySelectorAll('.bi-play-fill, .bi-pause-fill').forEach(icon => {
+        const iconTrackId = icon.closest('.Ost')?.querySelector('img')?.id || icon.closest('.oo')?.id;
+        if (iconTrackId === trackId) {
+            if (isPaused) {
+                icon.classList.remove('bi-pause-fill'); //일시정지 아이콘 제거
+                icon.classList.add('bi-play-fill');
+            } else {
+                icon.classList.remove('bi-play-fill');
+                icon.classList.add('bi-pause-fill');
+            }
+        } else {
+            icon.classList.remove('bi-pause-fill');
+            icon.classList.add('bi-play-fill');
+        }
+    });
+};
 
-    ToggleI0.onclick = () => {
-        ToggleI0.classList.toggle("bi-pause-fill");
-        ToggleI0.classList.toggle("bi-play-fill");
-    }
-    ToggleI1.onclick = () => {
-        ToggleI1.classList.toggle("bi-pause-fill");
-        ToggleI1.classList.toggle("bi-play-fill");
-    }
-    ToggleI2.onclick = () => {
-        ToggleI2.classList.toggle("bi-pause-fill");
-        ToggleI2.classList.toggle("bi-play-fill");
-    }
-    ToggleI3.onclick = () => {
-        ToggleI3.classList.toggle("bi-pause-fill");
-        ToggleI3.classList.toggle("bi-play-fill");
-    }
-    ToggleI4.onclick = () => {
-        ToggleI4.classList.toggle("bi-pause-fill");
-        ToggleI4.classList.toggle("bi-play-fill");
-    }
-    ToggleI5.onclick = () => {
-        ToggleI5.classList.toggle("bi-pause-fill");
-        ToggleI5.classList.toggle("bi-play-fill");
-    }
-    ToggleI6.onclick = () => {
-        ToggleI6.classList.toggle("bi-pause-fill");
-        ToggleI6.classList.toggle("bi-play-fill");
-    }
-    ToggleI7.onclick = () => {
-        ToggleI7.classList.toggle("bi-pause-fill");
-        ToggleI7.classList.toggle("bi-play-fill");
-    }
-}
+ 
 
-OstToggle();
