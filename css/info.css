@@ -249,6 +249,7 @@ button:hover {
 }
 
 @media (max-width: 800px) {
+    
     #all-container{
         margin-left: 20px;
         margin-top: 50rem;
@@ -278,11 +279,7 @@ button:hover {
     .video > iframe{ 
         width: 100%;
     }
-    /* .video{
-        
-        margin: 45px 0 5px -18px;
-        width: 300px;
-    } */
+    
     
 }
  
