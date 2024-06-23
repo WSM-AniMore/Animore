@@ -1,0 +1,9 @@
+#btn2{
+    background-color: var(--btn-color3);
+    color: var(--white);
+}
+
+#btn1, #btn3{
+    background-color: var(--btn-color2);
+    color: var(--text2);
+}
