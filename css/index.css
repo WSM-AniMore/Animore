@@ -52,10 +52,13 @@
  }
 
  #all-container {
-    margin: 150px auto 40px auto;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    margin: 200px auto 40px auto;
+    /* align-items:center; */
+    /* justify-content: center; */
  }
  
  .box-container1,
@@ -72,30 +75,29 @@
 
 
  .box-container1, .box-container2 {
-    margin: 45px 0 0 77px;
+    /* margin: 45px 0 0 77px; */
  }
 
  .box-container2 {
-    margin-left: 77px;
+    /* margin-left: 77px; */
  }
 
  .first-line {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
+    gap: 78px;
  }
 
  .second-line {
     display: flex;
     margin: 33px 0 40px 0;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 78px;
  }
 
  .box-container1 img,
  .box-container2 img {
-    margin: 15px 13px 3px 15.5px;
+   padding: 10px;
  }
 
  .title {
@@ -221,16 +223,15 @@
 
     }
 
-    /* #movieOption-wrapper{
-   margin-left: 10%;
-} */
     #movieOption-wrapper {
        position: absolute;
        left: 19%;
     }
 
     #all-container {
-       margin-left: -60px;
+       /* margin-left: -60px; */
+       display: flex;
+       align-items: center;
     }
 
  }
@@ -240,6 +241,10 @@
        position: absolute;
        top: 20%;
     }
+    #all-container{
+      display: flex;
+      align-items: center;
+    }
  }
 
 
@@ -248,19 +253,37 @@
        margin-top: 20px;
     }
 
-    .box-container1 {
-       margin-top: -10px;
+    #all-container{
+      display: flex;
+      align-items: center;
     }
+
+    
+
  }
 
-
+@media screen  and (max-width : 674px) {
+   #all-container{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      /* margin-left: 100px; */
+   }
+}
 
  /* 화면 너비가 676.5px 이상 1024px 이하일떄 */
- @media (min-width: 676.5px) and (max-width: 1024px) {
+ @media (min-width: 675px) and (max-width: 1024px) {
 
     .box-container1:nth-child(4),
     .box-container2:nth-child(4) {
        display: none;
+    }
+
+    #all-container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
 
  }
@@ -271,13 +294,21 @@
        top: 15%;
        left: 19%;
     }
+
+    #all-container{
+      display: flex;
+      align-items: center;
+    }
  }
 
  @media screen and (max-width: 905px) {
     #ActiveButton {
        display: none;
     }
-
+    #all-container{
+      display: flex;
+      align-items: center;
+    }
     #btn-container {
        display: block;
        display: flex;
@@ -306,9 +337,7 @@
        margin-bottom: 30px;
     }
 
-    #all-container {
-       margin-top: 200px;
-    }
+   
 
     .box-container2 {
        margin-bottom: 20px;
@@ -320,7 +349,11 @@
     }
 
     #all-container {
+      
        margin-top: 140px;
+       display: flex;
+       align-items: center;
+      /* margin-left: 43px; */
     }
  }
 
@@ -331,7 +364,8 @@
     }
 
     #all-container {
-       margin-top: 80px;
+       margin-top: 120px;
+       /* margin-left:3px; */
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -340,5 +374,15 @@
     .box-container1,
     .box-container2 {
       margin-right: 12px;
+    }
+
+    .first-line, .second-line{
+      gap: 10px;
+      display: flex;
+      justify-content: center;
+      /* margin-left: 70px; */
+    }
+    .line1{
+      margin-top: 30px;
     }
  }
