@@ -308,6 +308,7 @@
     #all-container{
       display: flex;
       align-items: center;
+      margin-top: 180px;
     }
     #btn-container {
        display: block;
@@ -350,10 +351,14 @@
 
     #all-container {
       
-       margin-top: 140px;
+       margin-top: 165px;
        display: flex;
        align-items: center;
       /* margin-left: 43px; */
+    }
+
+    .first-line,.second-line{
+      justify-content: center;
     }
  }
 
@@ -385,4 +390,10 @@
     .line1{
       margin-top: 30px;
     }
+ }
+
+ @media (min-width:636px) and (max-width : 675px) {
+   .m2, .m1{
+      display: none;
+   }
  }
