@@ -31,7 +31,8 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 600px; 
+    margin: 320px auto 70px auto;
+    
 }
 
 .poster {
@@ -47,6 +48,13 @@ main {
 #movieinfo-container {
     margin-left: 50px;
 }
+
+.imgContainer>img{
+    width: 160px;
+    height: 200px;
+}
+
+ 
 
 #movieinfo-container h3 {
     color: #333;
@@ -252,7 +260,7 @@ button:hover {
     
     #all-container{
         margin-left: 20px;
-        margin-top: 50rem;
+        margin-top: -30rem;
     }
     #movieinfo-container h3 {
         font-size: 18px;
@@ -295,7 +303,7 @@ button:hover {
 
     #all-container {
         margin: 0;
-        margin-top: 600px;
+        margin-top: 350px;
     }
 }
 
