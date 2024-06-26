@@ -97,7 +97,7 @@ button:hover {
 }
 
 .video{
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 p{
@@ -234,7 +234,7 @@ button:hover {
 @media (max-width: 790px) {
     #all-container {
         flex-direction: row;  
-        /* margin-top: 20rem; */
+        /* margin-top: 80px; */
     }
      
     .poster{
@@ -253,6 +253,10 @@ button:hover {
         width: 100%;
         font-size: 14px;
         padding: 10px;
+    }
+
+    .textt {
+        min-height: 330px;
     }
     
 }
@@ -284,12 +288,16 @@ button:hover {
     }
 
     .detail > .video {
-        margin: 45px 0 5px;
+        /* margin: 45px 0 5px; */
         width: 500px;
     }
     .video > iframe{ 
         width: 100%;
     }
+    .textt {
+        min-height: 330px;
+    }
+    
     
     
 }
@@ -306,7 +314,10 @@ button:hover {
 
     #all-container {
         margin: 0;
-        margin-top: 600px;
+        margin-top: 40rem;
+    }
+    .textt {
+        min-height: 330px;
     }
 }
 
