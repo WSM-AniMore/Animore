@@ -18,8 +18,10 @@ OST 페이지에서 원하는 노래를 클릭 시 음악을 감상하실 수 �
 ## Language 💻
 - `HTML`
 - `CSS`
-- `JAVASCRIPT`  
- 
+- `JAVASCRIPT`
+
+## Demo-Video 📀
+[데모 영상입니다.](https://drive.google.com/file/d/1zzanyZEYNmqeK6tItk23GoMM08aCYEtz/view?usp=drive_link)
 
 ## Members 👤
 Name | Part
