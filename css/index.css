@@ -318,7 +318,7 @@
  }
 
  /* mobile */
- @media screen and (max-width: 800px) {
+ @media (min-width:485px) and (max-width: 800px) {
 
     .movie4,
     .movie8 {
@@ -338,11 +338,9 @@
        margin-bottom: 30px;
     }
     .line1{
-     
       margin-bottom: 10px;
     }
-   
-  
+     
     .box-container2 {
        margin-bottom: 20px;
     }
@@ -388,11 +386,9 @@
       gap: 10px;
       display: flex;
       justify-content: center;
-      /* margin-left: 70px; */
+     
     }
-    .line1{
-      /* margin-top: 20px; */
-    }
+     
  }
 
  @media (min-width:636px) and (max-width : 675px) {
@@ -401,4 +397,13 @@
    }
  }
 
+
+ @media screen and (max-width:636px){
+   .line2{
+      margin-top: -60px;
+   }
+   .line1{
+      margin-top: -40px;
+   }
+ }
   
