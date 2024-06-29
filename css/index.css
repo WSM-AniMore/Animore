@@ -179,6 +179,7 @@
     display: none;
  }
 
+  
  /* tablet */
  @media screen and (max-width: 1024px) {
     #ActiveButton {
@@ -395,15 +396,20 @@
    .m2, .m1{
       display: none;
    }
+   
  }
 
 
  @media screen and (max-width:636px){
-   .line2{
-      margin-top: -60px;
+   .m1, .m2{
+      display: block;
+   }
+   
+   /* .line2{
+      margin-top: -20px;
    }
    .line1{
-      margin-top: -40px;
-   }
+      margin-top: -10px;
+   } */
  }
   
